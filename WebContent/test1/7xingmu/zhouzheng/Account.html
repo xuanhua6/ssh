@@ -1,0 +1,89 @@
+﻿
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>layui</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="stylesheet" href="../plugins/layui/css/layui.css" media="all">
+	<!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="search_wrapper">
+				<div class="search_input">
+					<input type="text">
+					<div class="searh_btn">
+						<a href="">搜索</a>
+					</div>
+				</div>
+			</div>
+			<div class="topNav fr">
+				<div class="login_area">
+					<div id="login_in" class="clearfix">
+						<div class="nav">
+								<a style="border: 1px solid #FFFFFF; background-color: #FFFFE1; color: #000000;" href="BeginnerAdmin/update/users.jsp" >添加</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+			<table class="layui-table">
+				<thead>
+					<tr class="layui-table1">
+						
+						<th>部门名称</th>
+						<th>部门人数</th>
+                                                <th>部门地址</th>
+						<th colspan="2">操作</th>
+					</tr>
+					<c:forEach items="${data }" var="aco">
+						<tr>
+							
+							
+<th>${aco.username }</th>
+<th>${aco.username }</th>
+<th>${aco.username }</th>
+
+							
+							
+							
+							
+							
+							<th><a href="BeginnerAdmin/update/ufrom.jsp">修改</a>
+							</th>
+							<th><a href="AccountServlet?action=del&id=${aco.id }" style="color: #DD691D;">删除</a>
+							</th>
+						</tr>
+					</c:forEach>
+				</thead>
+			</table>
+		<div class="layui-table-tool">
+			<div class="layui-inline layui-table-page" id="layui-table-page">
+				<div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-39">
+				${pageStr }
+				<span class="layui-laypage-limits\">
+						<select lay-ignore="">
+							<option value="10" selected="">10 条/页</option>
+							<option value="20">20 条/页</option>
+							<option value="30">30 条/页</option>
+							<option value="40">40 条/页</option>
+							<option value="50">50 条/页</option>
+							<option value="60">60 条/页</option>
+							<option value="70">70 条/页</option>
+							<option value="80">80 条/页</option>
+							<option value="90">90 条/页</option>
+						</select>
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

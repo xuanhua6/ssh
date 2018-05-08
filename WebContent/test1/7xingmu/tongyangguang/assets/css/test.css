@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+	td{
+		text-align:center;
+	}
+	left1{
+		float: left;
+	}
+	table{
+		height: 600px;
+		width: 600px;
+	}
+	

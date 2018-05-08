@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "struts-2.3.dtd" >
+<struts>
+	<constant name="struts.action.extension" value="action" />  
+      
+    <package name="ssh" namespace="/" extends="struts-default">
+    	<action name="Feenback_*" method="{1}" class="com.newture.action.FeenbackAction">
+    		<result name="success"> /test1/struts/indexsort/indexsoet.jsp</result>
+    		<result name="update"  type="redirect">/test1/struts/indexsort/uindexsort.jsp</result>
+    	</action>
+    	<action name="Feenbackitem_*" method="{1}" class="com.newture.action.FeenbackitemAction">
+    		<result name="success"> /test1/struts/index/ViewIndicator.jsp</result>
+    	</action>
+    	<action name="Feenbackscore_*" method="{1}" class="com.newture.action.FeenbackscoreAction">
+    		<result name="success"> /test1/struts/index/ViewIndicator.jsp</result>
+    	</action>
+    </package>
+</struts>

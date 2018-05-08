@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>用户中心 - Fly社区</title>
+		<link rel="stylesheet" href="plugins\layui\font.css">
+		<link rel="stylesheet" href="plugins\layui\css\layui.css">
+		<link rel="stylesheet" href="css/global.css" charset="utf-8">
+		<link rel="stylesheet" href="build/css/app.css" media="all">
+	</head>
+
+	<body>
+		<div class="fly-header layui-bg-black">
+			<div class="layui-container">
+				<a class="fly-logo" href="/">
+					<h1 style="color: #2F9688;"> 教学反馈系统</h1>
+				</a>
+				<ul class="layui-nav fly-nav layui-hide-xs">
+					<li class="layui-nav-item">
+					</li>
+				</ul>
+				<ul class="layui-nav fly-nav-user">
+					<li class="layui-nav-item">
+						<a class="fly-nav-avatar" href="7xingmu\tongyangguang\login.html" id="LAY_header_avatar" style="background-color: #DDDDDD;width: 40px;display: none;">
+							<cite class="layui-hide-xs">登录</cite>
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="7xingmu\tongyangguang\login.html" style="text-align: center;">注册</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item">
+						<a class="fly-nav-avatar" href="/user/" id="LAY_header_avatar" style="">
+							<cite class="layui-hide-xs">暄桦</cite>
+							<img src="img/10.jpg">
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="/user/">
+									<i class="layui-icon">&#xe612;</i>用户中心</a>
+							</dd>
+							<dd>
+								<a href="/user/set/">
+									<i class="layui-icon">&#xe620;</i>基本设置</a>
+							</dd>
+							<hr>
+							<dd>
+								<a href="/user/message/">
+									<i class="iconfont icon-tongzhi" style="top: 4px;"></i>我的消息</a>
+							</dd>
+							<dd>
+								<a href="/u/13027560">
+									<i class="layui-icon" style="margin-left: 2px; font-size: 22px;">&#xe68e;</i>我的主页</a>
+							</dd>
+							<hr style="margin: 5px 0;">
+							<dd>
+								<a href="7xingmu\tongyangguang\login.html" style="text-align: center;">退出</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="layui-container fly-marginTop fly-user-main" style="width: 80%;">
+			<ul class="layui-nav layui-nav-tree" lay-filter="layadmin-system-side-menu" kit-navbar lay-shrink="all">
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>系统管理</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'7xingmu/wenshaolin/Singer.html',icon:'&#xe6c6;',title:'角色管理',id:'2'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>角色管理</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'7xingmu/xiongyongding/admin-cate.html',icon:'&#xe6c6;',title:'权限管理',id:'3'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>权限管理</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/indexsort/indexsoet.jsp',icon:'&#xe6c6;',title:'指标类管理',id:'4'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>指标类管理</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/index/ViewIndicator.jsp',icon:'&#xe6c6;',title:'指标项管理',id:'5'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>指标项管理</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'7xingmu/fengweicheng/Updatepower.html',icon:'&#xe6c6;',title:'授权管理',id:'7'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>授权管理</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/major/major.jsp',icon:'&#xe6c6;',title:'授权管理',id:'7'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>汇总管理</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>用户管理</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'7xingmu/tongyangguang/Account.html',icon:'&#xe6c6;',title:'用户信息',id:'11'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>查看老师信息</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'7xingmu/tongyangguang/Account.html',icon:'&#xe6c6;',title:'用户信息',id:'13'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>查看学生信息</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'7xingmu/tongyangguang/ufrom.html',icon:'&#xe6c6;',title:'添加用户',id:'12'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>添加用户</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>个人信息</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'list/Account.jsp',icon:'&#xe6c6;',title:'查看资料',id:'21'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>查看资料</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'list/Account.jsp',icon:'&#xe6c6;',title:'修改资料',id:'22'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>修改资料</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>课程管理</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/course/CourseCheck.jsp',icon:'&#xe6c6;',title:'课程信息',id:'31'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>查看课程信息</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/course/CourseAdd.jsp',icon:'&#xe6c6;',title:'添加课程',id:'32'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>添加课程</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>意见管理</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/opinion/OpinionCheck.jsp',icon:'&#xe6c6;',title:'意见信息',id:'41'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>意见信息</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>班级管理</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/class/class.jsp',icon:'&#xe6c6;',title:'班级信息',id:'51'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>班级信息</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/class/classAdd.jsp',icon:'&#xe6c6;',title:'添加班级',id:'52'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>添加班级</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>部门管理</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/class/class.jsp',icon:'&#xe6c6;',title:'部门信息',id:'53'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>部门信息</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/class/classAdd.jsp',icon:'&#xe6c6;',title:'添加部门',id:'54'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>添加部门</span></a>
+						</dd>
+					</dl>
+				</li>
+				<li class="layui-nav-item">
+					<a class="" href="javascript:;"><i class="fa fa-user" aria-hidden="true"></i><span>反馈管理</span></a>
+					<dl class="layui-nav-child">
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/grabe/grabe.jsp',icon:'&#xe6c6;',title:'课程信息',id:'61'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>反馈安排记录</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'struts/grabe/grabeadd.jsp',icon:'&#xe6c6;',title:'添加课程',id:'62'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>评分</span></a>
+						</dd>
+						<dd>
+							<a href="javascript:;" kit-target data-options="{url:'7xingmu/guoxionglin/user.html',icon:'&#xe6c6;',title:'添加课程',id:'63'}">
+								<i class="fa fa-user" aria-hidden="true"></i><span>反馈安排</span></a>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+			<div class="site-tree-mobile layui-hide">
+				<i class="layui-icon">&#xe602;</i>
+			</div>
+			<div class="site-mobile-shade"></div>
+			<div class="fly-panel fly-panel-user" pad20 style="padding-top:20px;">
+				<div class="layui-body" id="container" style="margin-left: 8px;">
+					<!-- 内容主体区域 -->
+					<div style="padding: 15px;">主体内容加载中,请稍等...</div>
+				</div>
+			</div>
+		</div>
+		<div class="fly-footer">
+			<p>
+				<a href="">新程集团</a> 2018 &copy;
+				<a href="">湖南商学院</a>
+			</p>
+			<p>
+				<a href="" target="_blank">付费计划</a>
+				<a href="" target="_blank">@旺仔最好喝</a>
+				<a href="" target="_blank">微信公众号</a>
+			</p>
+
+		</div>
+		<script src="plugins/layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'build/js/'
+			}).use(['app', 'message'], function() {
+				var app = layui.app,
+					$ = layui.jquery,
+					layer = layui.layer;
+				//将message设置为全局以便子页面调用
+				message = layui.message;
+				//主入口
+				app.set({
+					type: 'iframe'
+				}).init();
+				$('#pay').on('click', function() {
+					layer.open({
+						title: true,
+						type: 1,
+						content: '<img src="/build/images/pay.png" />',
+						area: ['500px', '250px'],
+						shadeClose: flase
+					});
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

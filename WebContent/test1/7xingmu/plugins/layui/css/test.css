@@ -1,0 +1,171 @@
+blockquote,
+body,
+button,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+a:active,
+a:hover {
+	outline: 0
+}
+
+img {
+	display: inline-block;
+	border: none
+}
+
+li {
+	list-style: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+h1,
+h2,
+h3 {
+	font-size: 14px;
+	font-weight: 400
+}
+
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: 400
+}
+
+button,
+input,
+optgroup,
+option,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: inherit;
+	outline: 0
+}
+.search_wrapper {
+	height: 78px;
+	position: relative;
+}
+
+.search_wrapper {
+	width: 290px;
+	height: 36px;
+	margin-left: 200px;
+	padding-top: 20px;
+	z-index: 9999;
+}
+.search_input {
+	position: relative;
+	width: 298px;
+	height: 34px;
+	border: 1px solid #ccc;
+	line-height: 34px;
+	background-color: #FFFFFF;
+}
+
+.search_input input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 249px;
+	height: 24px;
+	line-height: 24px;
+	border: 0;
+	margin-left: 14px;
+	padding: 5px 0;
+	color: #666
+}
+
+.search_input .searh_btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 34px;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background: 0 0;
+	outline: 0;
+	cursor: pointer;
+	background-color: #CCCCCC;
+}
+
+.search_input .searh_btn a {
+	display: block;
+	text-align: center;
+	cursor: pointer
+}
+.layui-table1 {
+	left: 20px;
+	width: 1000px;
+	margin: 10px 20px;
+	background-color: #fff
+}
+
+.layui-table1 tr {
+	transition: all .3s;
+	-webkit-transition: all .3s
+}
+.layui-table1,tr,th{
+	border: 1px solid black;
+
+}
+.layui-table1{
+	left: 20px;
+	width: 1000px;
+	margin: 10px 20px;
+	background-color: #fff
+}
+.layui-table1 .20layui-table1-1{
+	font-size: 10px;
+}
+.layui-table1 thead tr th{
+	width: 70px;
+	height: 30px;
+	
+}
+.layui-table1 thead tr th a{
+	color: #007DDB;
+}
+.layui-table1 thead tr th a:hover{
+	color: #0C0C0C;
+}
+.layui-table-tool {
+    position: relative;
+    width: 100%;
+    padding: 7px 10px 0 0;
+    border-width: 1px 0 0;
+    height: 41px;
+    font-size: 12px;
+    white-space: nowrap;
+}

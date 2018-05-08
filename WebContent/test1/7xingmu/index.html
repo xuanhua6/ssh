@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>KIT ADMIN</title>
+		<link rel="stylesheet" href="./plugins/layui/css/layui.css" media="all">
+		<link rel="stylesheet" type="text/css" href="plugins/font-awesome.min.css">
+		<link rel="stylesheet" href="./build/css/app.css" media="all">
+	</head>
+
+	<body>
+		<div class="layui-layout layui-layout-admin kit-layout-admin">
+			<div class="layui-header">
+				<div class="layui-logo">KIT ADMIN</div>
+				<div class="layui-logo kit-logo-mobile">K</div>
+				<ul class="layui-nav layui-layout-left kit-nav">
+					<li class="layui-nav-item">
+						<a href="javascript:;">控制台</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="javascript:;">商品管理</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="javascript:;" id="pay"><i class="fa fa-gratipay" aria-hidden="true"></i> 捐赠我</a>
+					</li>
+					<li class="layui-nav-item">
+						<a href="javascript:;">其它系统</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="javascript:;">邮件管理</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">消息管理</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">授权管理</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<ul class="layui-nav layui-layout-right kit-nav">
+					<li class="layui-nav-item" style="background-color: #30B976; right: 20px; font-weight:bold;">
+						<a href="../matter6/index.html">
+							登录
+						</a>
+					</li>
+					<div style="display: none;">
+						<li class="layui-nav-item">
+							<a href="javascript:;">
+								<img src="http://m.zhengjinfan.cn/images/0.jpg" class="layui-nav-img"> Van
+							</a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;">基本资料</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">安全设置</a>
+								</dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+						</li>-->
+					</div>
+				</ul>
+			</div>
+
+			<div class="layui-side layui-bg-black kit-side">
+				<div class="layui-side-scroll">
+					<div class="kit-side-fold"><i class="fa fa-navicon" aria-hidden="true"></i></div>
+					<ul class="layui-nav layui-nav-tree" lay-filter="kitNavbar" kit-navbar>
+						<li class="layui-nav-item">
+							<a class="" href="javascript:;"><i class="fa fa-plug" aria-hidden="true"></i><span> 部门管理</span></a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'zhouzheng/Account.html',icon:'&#xe6c6;',title:'部门列表',id:'1'}">
+										<i class="layui-icon">&#xe6c6;</i><span>部门列表</span></a>
+								</dd>
+								<dd>
+									<a href="javascript:;" data-url="zhouzheng/ufrom.html" data-icon="fa-user" data-title="添加部门" kit-target data-id='2'><i class="fa fa-user" aria-hidden="true"></i><span> 添加部门</span></a>
+								</dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item" lay-filter="kitNavbar" kit-navbar>
+							<a href="javascript:;"><i class="fa fa-plug" aria-hidden="true"></i><span>汇总管理</span></a>
+							<dl class="layui-nav-child">
+								
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'zhangxicheng/collect.html',icon:'&#xe658;',title:'按班级汇总',id:'22'}"><i class="layui-icon">&#xe658;</i><span> 按班级汇总</span></a>
+								</dd>
+                                	<dd>
+									<a href="javascript:;" kit-target data-options="{url:'zhangxicheng/collect.html',icon:'&#xe658;',title:'按教师汇总',id:'22'}"><i class="layui-icon">&#xe658;</i><span> 按教师汇总</span></a>
+								</dd>
+                                <dd>
+									<a href="javascript:;" kit-target data-options="{url:'zhangxicheng/collect.html',icon:'&#xe658;',title:'按部门汇总',id:'22'}"><i class="layui-icon">&#xe658;</i><span> 按部门汇总</span></a>
+								</dd>
+                                
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="fa fa-plug" aria-hidden="true"></i><span>角色权限管理</span></a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'fengweicheng/power.html',icon:'&#xe658;',title:'权限绑定',id:'31'}"><i class="layui-icon">&#xe658;</i><span> 权限绑定</span></a>
+								</dd>
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'fengweicheng/Updatepower.html',icon:'&#xe658;',title:'角色权限',id:'32'}"><i class="layui-icon">&#xe658;</i><span> 角色权限</span></a>
+								</dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="fa fa-plug" aria-hidden="true"></i><span>角色管理</span></a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'wenshaolin/singer.html',icon:'&#xe658;',title:'角色列表',id:'51'}"><i class="layui-icon">&#xe658;</i><span> 角色列表</span></a>
+								</dd>
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'wenshaolin/power.html',icon:'&#xe658;',title:'添加角色',id:'52'}"><i class="layui-icon">&#xe658;</i><span> 添加角色</span></a>
+								</dd>
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="fa fa-plug" aria-hidden="true"></i><span>权限管理</span></a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'xiongyongding/admin-cate.html',icon:'&#xe658;',title:'权限管理',id:'61'}"><i class="layui-icon">&#xe658;</i><span> 权限管理</span></a>
+								</dd>
+								
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="javascript:;"><i class="fa fa-plug" aria-hidden="true"></i><span>用户管理</span></a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'tongyangguang/ufrom.html',icon:'&#xe658;',title:'添加用户',id:'71'}"><i class="layui-icon">&#xe658;</i><span> 添加用户</span></a>
+								</dd>
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'tongyangguang/Account.html',icon:'&#xe658;',title:'用户列表',id:'72'}"><i class="layui-icon">&#xe658;</i><span> 用户列表</span></a>
+								</dd>
+                                
+							</dl>
+						</li>
+                        <li class="layui-nav-item">
+							<a href="javascript:;"><i class="fa fa-plug" aria-hidden="true"></i><span>反馈管理</span></a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;" kit-target data-options="{url:'guoxionglin/user.html',icon:'&#xe658;',title:'安排反馈',id:'71'}"><i class="layui-icon">&#xe658;</i><span> 安排反馈</span></a>
+								</dd>
+                                
+							</dl>
+						</li>
+						<li class="layui-nav-item">
+							<a href="../music.jsp"><i class="fa fa-plug" aria-hidden="true"></i><span>进入前台</span></a>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="layui-body" id="container">
+				<!-- 内容主体区域 -->
+				<div style="padding: 15px;">主体内容加载中,请稍等...</div>
+			</div>
+
+			<div class="layui-footer">
+				<!-- 底部固定区域 -->
+				2017 &copy;
+				<a href="http://kit.zhengjinfan.cn/">kit.zhengjinfan.cn/</a> MIT license
+
+			</div>
+		</div>
+
+		<script src="./plugins/layui/layui.js"></script>
+		<script>
+			layui.config({
+				base: 'build/js/'
+			}).use(['app', 'message'], function() {
+				var app = layui.app,
+					$ = layui.jquery,
+					layer = layui.layer;
+				//将message设置为全局以便子页面调用
+				message = layui.message;
+				//主入口
+				app.set({
+					type: 'iframe'
+				}).init();
+				$('#pay').on('click', function() {
+					layer.open({
+						title: false,
+						type: 1,
+						content: '<img src="/build/images/pay.png" />',
+						area: ['500px', '250px'],
+						shadeClose: true
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>
